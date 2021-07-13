@@ -110,15 +110,18 @@ export default function Rent() {
         };
 
         bookings.forEach(booking => {
+            //Check all the date conditions to rent a vehicle
+
+            const isBefore = (moment(pickUpDate).isBefore(booking.pickUpDate, 'day') && moment(dropOffDate).isBefore(booking.pickUpDate, 'day'));
+            const isAfter = (moment(pickUpDate).isAfter(booking.dropOffDate, 'day') && moment(dropOffDate).isAfter(booking.dropOffDate, 'day'));
+            const isSameDay= (moment(booking.pickUpDate).isSame(pickUpDate) || moment(booking.dropOffDate).isSame(dropOffDate));
 
             if(booking.pickUpDate && booking.dropOffDate && pickUpDate && dropOffDate){
-                if(booking.vehicle.id === vehicleId){
-                    const isBefore = (moment(pickUpDate).isBefore(booking.pickUpDate, 'day') && moment(dropOffDate).isBefore(booking.pickUpDate, 'day'));
-                    const isAfter = (moment(pickUpDate).isAfter(booking.dropOffDate, 'day') && moment(dropOffDate).isAfter(booking.dropOffDate, 'day'));
 
-                    if(!(isBefore || isAfter) || 
-                    (moment(booking.pickUpDate).isSame(pickUpDate) || moment(booking.dropOffDate).isSame(dropOffDate))
-                    ){
+                //Check if vehicle is available
+                if(booking.vehicle.id === vehicleId){
+            
+                    if(!(isBefore || isAfter) || isSameDay ){
                         return response = {
                             message: 'Veículo já reservado nessa data',
                             success: false
@@ -126,13 +129,9 @@ export default function Rent() {
                     }
                 }         
                 
+                //Check if user has an ongoing booking
                 if(booking.userId === userId){
-                    const isBefore = (moment(pickUpDate).isBefore(booking.pickUpDate, 'day') && moment(dropOffDate).isBefore(booking.pickUpDate, 'day'));
-                    const isAfter = (moment(pickUpDate).isAfter(booking.dropOffDate, 'day') && moment(dropOffDate).isAfter(booking.dropOffDate, 'day'));
-
-                    if(!(isBefore || isAfter) || 
-                    (moment(booking.pickUpDate).isSame(pickUpDate) || moment(booking.dropOffDate).isSame(dropOffDate))
-                    ){
+                    if(!(isBefore || isAfter) || isSameDay ){
                         return response = {
                             message: 'Você já possui um agendamento nessa data',
                             success: false
