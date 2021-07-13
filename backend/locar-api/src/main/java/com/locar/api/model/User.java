@@ -13,11 +13,6 @@ public class User {
 	
 	private String email;
 
-	
-	public User() {
-		super();
-	}
-
 	public User(String name, String email) {
 		super();
 		this.name = name;

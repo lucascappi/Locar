@@ -1,5 +1,7 @@
 package com.locar.api.service.impl;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +16,24 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public User logIn(User user) {
-		return this.userRepository.save(user);
+		String requestBodyEmail = user.getEmail();
+		Optional<User> opt = this.userRepository.getUserByEmail(requestBodyEmail);
+		
+		if(opt.isPresent()) {
+			User userExists = opt.get();
+			String requestBodyName = user.getName();
+			
+			if(requestBodyName != userExists.getName()) {
+				userExists.setName(requestBodyName);
+				
+				return this.userRepository.save(userExists);
+			} else {
+				return this.userRepository.save(userExists);
+			}
+		} else {
+			return this.userRepository.save(user);
+		}
+		
 	}
 
 }

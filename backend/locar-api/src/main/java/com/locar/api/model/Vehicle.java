@@ -22,10 +22,6 @@ public class Vehicle {
 	private String image;
 	
 	private List<String> colors;	
-
-	public Vehicle() {
-		super();
-	}
 	
 	public Vehicle(String brand, String model, Double km, Integer year, String image, List<String> colors) {
 		super();

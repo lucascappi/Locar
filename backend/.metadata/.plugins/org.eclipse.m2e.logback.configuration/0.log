@@ -41,3 +41,20 @@
 2021-07-13 15:30:52,703 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-07-13 15:30:52,703 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2021-07-13 15:30:52,703 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\lucap\Documents\Lucas\trabalho\SulAmérica\locar\backend\locar-api\src\test\resources
+2021-07-13 18:05:34,281 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-07-13 18:06:14,555 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-07-13 18:06:19,946 [Worker-1: Launching locar-api - LocarApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-13 18:06:19,946 [Worker-1: Launching locar-api - LocarApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-13 18:06:19,949 [Worker-1: Launching locar-api - LocarApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-07-13 18:06:19,960 [Worker-1: Launching locar-api - LocarApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-13 18:06:19,962 [Worker-1: Launching locar-api - LocarApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-13 18:06:19,962 [Worker-1: Launching locar-api - LocarApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-13 18:06:19,962 [Worker-1: Launching locar-api - LocarApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\lucap\Documents\Lucas\trabalho\SulAmérica\locar\backend\locar-api\src\test\resources
+2021-07-13 18:08:01,723 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-07-13 18:08:52,196 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-13 18:08:52,197 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-13 18:08:52,200 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-07-13 18:08:52,222 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-13 18:08:52,224 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-13 18:08:52,224 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-13 18:08:52,224 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\lucap\Documents\Lucas\trabalho\SulAmérica\locar\backend\locar-api\src\test\resources
