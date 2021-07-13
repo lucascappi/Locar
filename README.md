@@ -20,7 +20,7 @@ $ git clone https://github.com/lucascappi/Locar.git
 
 ### Siga as instruções abaixo:
 
-Importe o banco de dados localizado na pasta mongo-db (arquivos .BSON), para ter acesso à coleção de veículos na sua aplicação;
+Instale o MongoDB e o Studio 3T(recomendado) e, em seguida, importe o banco de dados localizado na pasta mongo-db (arquivos .BSON) no Studio 3T ou através do comando mongorestore.
 
 Abra a pasta backend e rode o projeto SpringBoot em servidor local (port:8080);
 
